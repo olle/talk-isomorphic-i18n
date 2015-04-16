@@ -1,0 +1,7 @@
+{
+  "name": "talk-isomorphic-i18n",
+  "devDependencies": {
+    "reveal.js": "~2.6.2"
+  },
+  "dependencies": {}
+}
