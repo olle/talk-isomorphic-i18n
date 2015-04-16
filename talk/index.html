@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Isomorphic i18n - FTW!</title>
+  <meta name="description" content="Isomorphic i18n, localizations on the server- and client-side">
+  <meta name="author" content="Olle Törnström - olle@studiomediatech.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="../bower_components/reveal.js/css/reveal.min.css">
+  <link rel="stylesheet" href="../bower_components/reveal.js/css/theme/blood.css" id="theme">
+  <link rel="stylesheet" href="../bower_components/reveal.js/lib/css/zenburn.css">
+
+  <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+  <script>
+    document.write('<link rel="stylesheet" href="../bower_components/reveal.js/css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+  </script>
+
+  <!--[if lt IE 9]>
+  <script src="../bower_components/reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section>
+        <h1>Welcome!</h1>
+        <p>
+          DISCLAIMER: this presentation may contain strongly opinionated views,
+          philosophical tech-rants, very little science and possibly traces of
+          <em>nuts</em>.
+        </p>
+      </section>
+
+      <section>
+        <h1>Isomorphic i18n</h1>
+        <aside class="notes">
+          This is where the talk-notes goes...
+        </aside>
+      </section>
+
+      <section>
+        <h1>Questions?</h1>
+        <aside class="notes">
+          Are there any questions?
+        </aside>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="../bower_components/reveal.js/lib/js/head.min.js"></script>
+  <script src="../bower_components/reveal.js/js/reveal.min.js"></script>
+  <script>
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: false,
+      progress: true,
+      history: true,
+      center: true,
+
+      theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+      transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
+
+      // Parallax scrolling
+      parallaxBackgroundImage: 'img/reveal-parallax-2.jpg',
+      parallaxBackgroundSize: '2100px 900px',
+
+      // Optional libraries used to extend on reveal.js
+      dependencies: [{
+        src: '../bower_components/reveal.js/lib/js/classList.js',
+        condition: function() {
+          return !document.body.classList;
+        }
+      }, {
+        src: '../bower_components/reveal.js/plugin/highlight/highlight.js',
+        async: true,
+        callback: function() {
+          hljs.initHighlightingOnLoad();
+        }
+      }, {
+        src: '../bower_components/reveal.js/plugin/notes/notes.js',
+        async: true,
+        condition: function() {
+          return !!document.body.classList;
+        }
+      }]
+    });
+  </script>
+</body>
+
+</html>
