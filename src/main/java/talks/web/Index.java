@@ -1,26 +1,26 @@
 package talks.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.MessageSource;
-import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import talks.messages.MessageService;
+
 @Controller
 class Index {
 
-	private final MessageSource messages;
+	private final MessageService messageService;
 
 	@Autowired
-	public Index(MessageSource messages) {
-		this.messages = messages;
+	public Index(MessageService messageService) {
+		this.messageService = messageService;
 	}
 
 	@RequestMapping("/")
 	public String index(Model model) {
 
-		model.addAttribute("greeting", messages.getMessage("greeting", null, LocaleContextHolder.getLocale()));
+		model.addAttribute("greeting", messageService.getMessage("greeting"));
 
 		return "index";
 	}
