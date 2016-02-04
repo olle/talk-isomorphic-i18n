@@ -14,6 +14,7 @@ class Index {
 
 	@Autowired
 	public Index(MessageService messageService) {
+		
 		this.messageService = messageService;
 	}
 
