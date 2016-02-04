@@ -17,7 +17,8 @@ The [Reveal.JS](http://lab.hakim.se/reveal-js) presentation should be no match
 to get going, as long as you have [npm and Node.js](http://nodejs.org). Simply
 run:
 
-    npm install start
+    npm install
+    npm start
 
 This will bootstrap all dependencies and just kickstart the whole thing, enjoy!
 
